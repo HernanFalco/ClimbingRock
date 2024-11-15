@@ -455,11 +455,21 @@ footer {
 .contacto {
     display: flex;
     justify-content: center;
-    align-items: center;  /* Ajustamos la alineación para que el formulario esté en la parte superior */
+    align-items: center; 
     flex-direction: column;
-    flex-grow: 1; /* Permite que el formulario ocupe el espacio restante, asegurando que el footer quede al final */
-    padding-top: 80px; /* Asegura que haya espacio debajo del header (ajustar según el tamaño del header) */
-    min-height: 80vh; /* Asegura que la sección ocupe al menos la altura completa de la ventana */
+    flex-grow: 1; 
+    padding-top: 80px; 
+    height: 76vh; 
+    background-image: url("../assets/img/fondoM2.jpg");
+    background-size: cover;
+    background-position: center; 
+    border-radius: 15px;
+}
+
+.contacto img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
 }
 
 /* Estilos del formulario */
@@ -469,7 +479,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgba(249, 249, 249, 0.8); /* Fondo blanco semi-transparente */
+    background-color: rgba(249, 249, 249, 0.8); 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px; 
@@ -501,18 +511,20 @@ label {
 
 input,
 textarea {
-    width: 90%;
+    width: 100%;
     padding: 5px;
     font-size: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     resize: none;
+    font-family: "Ubuntu";
+    
 }
 
 input:focus,
 textarea:focus {
-    border-color: #007bff;
+    border-color: #fb6406;
     outline: none;
 }
 
@@ -525,18 +537,72 @@ textarea:focus {
 .btn {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #484a4cc3;
     color: white;
     font-size: 1.2rem;
+    font-family: "Ubuntu";
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+.space {
+    width: 100%;
+    height: 85vh;
+    background-color: #ffffff;
+}
 
+#buttonUp {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 70px;
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
+    font-family: monospace;
+    background-color: #5f6468b4;
+    color:#ede6e6;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3;
+}
+
+#buttonUp:hover {
+    background-color: #989e9ec2;
+}
+
+#buttonUp.show {
+    display: block;
+}
   
+.iframe-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.error {
+    font-family: "Ubuntu";
+    color: #e7692af2;
+}
+
+.success {
+    font-family: "Ubuntu";
+    color: #6a6565;
+}
 
 @-webkit-keyframes opacity {
     0%, 100% {opacity:0;}
