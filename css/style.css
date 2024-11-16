@@ -800,7 +800,7 @@ textarea:focus {
 
     header {
         justify-content: start;
-        gap: 36px;
+        gap: 25px;
         width: 97.5%;
     }
     .menu {
