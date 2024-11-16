@@ -22,31 +22,31 @@ header {
  justify-content: space-between;
  font-family: "Ubuntu";
  z-index: 1;
-
+}
     .logo {
         width: 60px;
         height: 60px;
         margin-left: 25px;
-        
+    }
         img {
             width: 100%;
             height: 100%;
         }
-    }
+    
     .menu {
         display: flex;
         padding-right: 40px;
         list-style: none;
         gap: 30px;
-        
+    }
         li a {
             text-decoration: none;
             font-size: 1.2rem;
             color: rgb(255, 255, 255);
             font-weight: 500;
         }
-    }
-}
+    
+
 
 main {
     width: 100%;
@@ -61,7 +61,7 @@ main {
         width: 100%;
         height: 100vh;
         border-radius: 15px;
-
+    }
         .content {
             position: absolute;
             top: 70%;
@@ -131,7 +131,7 @@ main {
             line-height: 40px;
             margin: 0;
         }
-    }
+    
     
     .separador {
         width: 95%;      
@@ -276,6 +276,7 @@ main {
         margin: 80px 0;
         gap: 8%;
         flex-wrap: wrap;
+    }
       
         .girl {
             background-image: url(../assets/img/fondoClimb2.jpg);
@@ -299,6 +300,7 @@ main {
             line-height: 1.5;
             font-size: 0.9rem;
             color: #444141;
+        }
 
             h2 {
                 font-size: 2rem;
@@ -307,10 +309,7 @@ main {
                 font-size: 1.2rem;
             }
             
-        }
-    }
-
-
+        
     /* VIDEO */
 
     .adam {
@@ -392,9 +391,6 @@ main {
                     height: auto;
                 }          
             
-        
-    
-
 footer {
     background-color: #a7aca900;
     border-radius: 15px;
@@ -789,3 +785,71 @@ textarea:focus {
     }
 }
 
+@media (max-width: 420px) {
+    nav {
+        width: 70%;
+    }
+
+    header {
+        justify-content: start;
+        gap: 15px;
+    }
+    .menu {
+        padding: 0;
+        gap: 16px;
+    }
+    li a {
+        font-size: 14px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+        margin-top: 70px;
+    }
+
+    .logos {
+        height: 10%;
+        gap: 30px;
+    }
+
+    .containerF {
+        gap: 20px;
+     }
+
+     .derechos {
+        text-align: center;
+     }
+
+     .textBoxContainer:after, .textBoxContainer:before {
+        font-size: 30px;
+    }
+    
+    .textBoxContainer_text {
+        font-size: 22px;
+    }
+    .textBoxContainer_list {
+        font-size: 22px;
+    }
+    
+    .textBoxContainer_list_item {
+        width: 120px;
+    }
+
+    footer { 
+        margin-bottom: 30px;
+    }
+}
