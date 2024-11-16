@@ -789,7 +789,7 @@ textarea:focus {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
 
     body{
         margin: 0 5px;
