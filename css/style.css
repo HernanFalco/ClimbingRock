@@ -869,4 +869,12 @@ textarea:focus {
         border-radius: 15px;
         margin: 10px 80px 0;
     }
+
+    #buttonUp {
+        bottom: 30px;
+        right: 40px;
+        width: 45px;
+        height: 45px;
+
+    }
 }
