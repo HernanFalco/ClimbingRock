@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: "Ubuntu";
 }
 
 body {
@@ -789,13 +790,18 @@ textarea:focus {
 }
 
 @media (max-width: 420px) {
+
+    body{
+        margin: 0 5px;
+    }
     nav {
         width: 70%;
     }
 
     header {
         justify-content: start;
-        gap: 15px;
+        gap: 36px;
+        width: 97.5%;
     }
     .menu {
         padding: 0;
