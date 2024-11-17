@@ -662,13 +662,69 @@ textarea:focus {
 
 /* MEDIA QUERIS (INCOMPLETO) */
 
-
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     
-    header {
-        width: 98.6%;
+    .containerTwo {
+        height: 135vh;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    .grilla {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a c"
+        "e b"
+        "f h"
+        "g d";
+        gap: 10px;
+        margin: 0;
+        height: auto;
+    }
+
+        .b {
+            height: 400px;
+        }
+        
+        .f {
+            height: 350px;
+            margin: 50px 0;
+        }
+
+        .d {
+            height: 350px;
+            margin: 50px 0;
+        }
+
+        .e {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .separador {
+            margin: 120px auto;
+        }
+
+    #buttonUp {
+        bottom: 30px;
+        right: 40px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .textBox2 {
+        padding: 65px 0;
+        font-size: 1.6rem;
     }
     
+}
+
+@media (max-width: 768px) {
+
     nav {
         display:flex;
     }
@@ -733,6 +789,7 @@ textarea:focus {
         gap: 10px;
         margin: 20px 0;
         height: auto;
+    }
 
         .b {
             height: 400px;
@@ -747,7 +804,7 @@ textarea:focus {
             height: 350px;
             margin: 50px 0;
         }
-    }
+
 
     .adam {
         flex-direction: column; 
@@ -788,18 +845,18 @@ textarea:focus {
        flex-direction: column;
        width: 100%;
     }
+
+    li a {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
 
-    nav {
-        width: 70%;
-    }
-
     header {
-        justify-content: start;
-        gap: 25px;
-        width: 98.5%;
+        gap: 86px;
+        width: 98.4%;
+        justify-content: normal;
     }
     .menu {
         padding: 0;
@@ -873,6 +930,5 @@ textarea:focus {
         right: 40px;
         width: 45px;
         height: 45px;
-
     }
 }
