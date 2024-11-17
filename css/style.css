@@ -932,3 +932,15 @@ textarea:focus {
         height: 45px;
     }
 }
+
+@media (max-width: 440px) {
+    header {
+        gap: 40px;
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+
+}
