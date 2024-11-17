@@ -664,6 +664,7 @@ textarea:focus {
 
 
 @media (max-width: 768px) {
+    
     header {
         width: 98.6%;
     }
@@ -674,11 +675,11 @@ textarea:focus {
 
     .containerOne {
         width: 100%;
+    }
 
         .content {
             height: 400px;
         }
-    }
 
     .textBoxContainer_text {
         font-size: 28px;
@@ -791,9 +792,6 @@ textarea:focus {
 
 @media (max-width: 480px) {
 
-    /* body{
-        margin: 0 5px; */
-    }
     nav {
         width: 70%;
     }
@@ -877,3 +875,4 @@ textarea:focus {
         height: 45px;
 
     }
+}
